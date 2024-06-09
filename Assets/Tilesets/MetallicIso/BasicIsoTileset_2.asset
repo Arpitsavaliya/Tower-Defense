@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BasicIsoTileset_2
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -1421805478, guid: 4e30435560fb1bb42928a1440a0af2f0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.56078434}
   m_Transform:
     e00: 1
     e01: 0
