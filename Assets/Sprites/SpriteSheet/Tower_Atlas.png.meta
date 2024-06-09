@@ -1,0 +1,1214 @@
+fileFormatVersion: 2
+guid: 5cbe74e6303b14740bd33022e5e43a27
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tower_Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3880
+        width: 237
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16cfdd6795a87a4c89d4e40ef6ba858
+      internalID: 411309606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 3880
+        width: 237
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9713bba38f8a2f24b9bfb8fab0375f88
+      internalID: 1704405297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 3901
+        width: 237
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d9f628b1453a04aaaf974b7aded852
+      internalID: 424645027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 3901
+        width: 237
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64e191929e6ee640997c69fb9ba479f
+      internalID: 2114349486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 3874
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e199bd6e3131074cb28b6dc520df755
+      internalID: 980711679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 3874
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8825b139771171a47b57b6b3f1a56562
+      internalID: -137108533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 3880
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9f823c28cd8754da7b78117ce6b764
+      internalID: 1028797514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3348
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803d253101c4f0641b9cde89ae2004b2
+      internalID: -52320001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 3344
+        width: 250
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be5064fb2e43a04ca152eb829fc0b7f
+      internalID: -118059304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 3344
+        width: 250
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2700839345a3e448574fcd70279dd7
+      internalID: -291649472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3348
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6510dad635b99424ca1799741d899192
+      internalID: -434766192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 3348
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5c243444460704eadb8f9bbe92546c
+      internalID: 51429034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 3360
+        width: 170
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b406442aeab82874dbffab7be6c76afd
+      internalID: 452292734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 3377
+        y: 3360
+        width: 170
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5fcc32999618848a1a0943816a8431
+      internalID: 717661337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2841
+        width: 170
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac64de7dfb6f1f419beb3ec87ec7448
+      internalID: -691743883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2841
+        width: 170
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8921bac3957e44aa516dca8f4a6fb0
+      internalID: -1906588391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 2816
+        width: 191
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb3d9cf7c24b5747aa1e05bc75c4924
+      internalID: -115119245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 2816
+        width: 191
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eddce3903dcf7149a09bedf1b2e3de5
+      internalID: 1416777704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 2841
+        width: 191
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44258b8ef6ad2254da3b62a2c5aa3a9d
+      internalID: 1900516246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 2841
+        width: 191
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179ed985ca69bc5498f015e7adf104b2
+      internalID: 1117625502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 2814
+        width: 187
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a4a6c6d03148e4ea4992a52a8624f3
+      internalID: 113372192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2282
+        width: 187
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2680fb724c1c3418a7767e3ed336e4
+      internalID: -605080504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2300
+        width: 187
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5faae986a24c84b88ba8de120088e6
+      internalID: -2083388628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 2300
+        width: 187
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4602b6a7a0bf104a977d92750a18752
+      internalID: -977354630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 2278
+        width: 206
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c416b7a2ea99bb4eb305c27e9062c5f
+      internalID: -1060184793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 2278
+        width: 206
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7caadad98be0148b8e5d878b88d328
+      internalID: 1664369420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_26
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 2303
+        width: 206
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5e33b3d40285d479f08599cac9b724
+      internalID: -280266908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 3381
+        y: 2303
+        width: 206
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca488e403311a884187fc3a22c8d7f03
+      internalID: 886630808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1752
+        width: 212
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a009e97534e54c145b14533aa0a72b14
+      internalID: 1365761938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1752
+        width: 212
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f7c91d81012c24097dd4eb2d15da11
+      internalID: -287409476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1775
+        width: 212
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343874e1bc8d05c4db192edf383a15f8
+      internalID: 2033024142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1775
+        width: 212
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7305a827114e04b9b173bbe47945b3
+      internalID: 1715590529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_32
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 1771
+        width: 128
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0585eb7155fcb4f99b4071598e4cad
+      internalID: -942654952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_33
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 1771
+        width: 128
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e7d70edf709e46af939b6996bdc60
+      internalID: 1145142000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1785
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e890d3729173f4c8e0f546f7d31fe5
+      internalID: -1147466099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_35
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1253
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de960497e2e6b24788ea5b36716095f
+      internalID: 1173126634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1253
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04b6b58bb591dd4ea4529677b2b8095
+      internalID: -1336535432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_37
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1253
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb6424c257f56b4da8805dd75fde5ab
+      internalID: -1828481138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_38
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1253
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0681aad913af587438554bd5fbf53d2d
+      internalID: 79019961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_39
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 1253
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3803ac669f4c1f1489b374f957459f26
+      internalID: 183622707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_40
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1253
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2784cca8acec8094b9e7f392794fe50c
+      internalID: 188589256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_41
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 1253
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fd63b6163a4854485ab0d4af65ae48
+      internalID: 1234058181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_42
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 729
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c30e0c1e4c126d468a77028c570f785
+      internalID: 1571050539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_43
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 729
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c5db24c819d95418bbf8b5fd14b59e
+      internalID: 1050463545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 736
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bead56853e1aaf4448a52eba0021397a
+      internalID: 744192952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_45
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 736
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9911b0ec4e61d464cbee8ce776e81780
+      internalID: -914364614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_46
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 732
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93ebe889e927484fbcd043264ebf7f6
+      internalID: -1416295707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_47
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 732
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d65232a536b3994281bcaeb703e0c67
+      internalID: -1518750080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_48
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 732
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272cc81e13ff25c448f49f8368657a3e
+      internalID: 1446727801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 200
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995416d8661178445b9c733df8928080
+      internalID: -505184571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tower_Atlas_0: 411309606
+      Tower_Atlas_1: 1704405297
+      Tower_Atlas_10: -434766192
+      Tower_Atlas_11: 51429034
+      Tower_Atlas_12: 452292734
+      Tower_Atlas_13: 717661337
+      Tower_Atlas_14: -691743883
+      Tower_Atlas_15: -1906588391
+      Tower_Atlas_16: -115119245
+      Tower_Atlas_17: 1416777704
+      Tower_Atlas_18: 1900516246
+      Tower_Atlas_19: 1117625502
+      Tower_Atlas_2: 424645027
+      Tower_Atlas_20: 113372192
+      Tower_Atlas_21: -605080504
+      Tower_Atlas_22: -2083388628
+      Tower_Atlas_23: -977354630
+      Tower_Atlas_24: -1060184793
+      Tower_Atlas_25: 1664369420
+      Tower_Atlas_26: -280266908
+      Tower_Atlas_27: 886630808
+      Tower_Atlas_28: 1365761938
+      Tower_Atlas_29: -287409476
+      Tower_Atlas_3: 2114349486
+      Tower_Atlas_30: 2033024142
+      Tower_Atlas_31: 1715590529
+      Tower_Atlas_32: -942654952
+      Tower_Atlas_33: 1145142000
+      Tower_Atlas_34: -1147466099
+      Tower_Atlas_35: 1173126634
+      Tower_Atlas_36: -1336535432
+      Tower_Atlas_37: -1828481138
+      Tower_Atlas_38: 79019961
+      Tower_Atlas_39: 183622707
+      Tower_Atlas_4: 980711679
+      Tower_Atlas_40: 188589256
+      Tower_Atlas_41: 1234058181
+      Tower_Atlas_42: 1571050539
+      Tower_Atlas_43: 1050463545
+      Tower_Atlas_44: 744192952
+      Tower_Atlas_45: -914364614
+      Tower_Atlas_46: -1416295707
+      Tower_Atlas_47: -1518750080
+      Tower_Atlas_48: 1446727801
+      Tower_Atlas_49: -505184571
+      Tower_Atlas_5: -137108533
+      Tower_Atlas_6: 1028797514
+      Tower_Atlas_7: -52320001
+      Tower_Atlas_8: -118059304
+      Tower_Atlas_9: -291649472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
