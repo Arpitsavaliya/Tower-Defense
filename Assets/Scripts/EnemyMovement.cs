@@ -6,39 +6,41 @@ public class EnemyMovement : MonoBehaviour {
 
 	private Transform target;
 	private int wavepointIndex = 0;
-
+	private Waypoints _pathToFollow;
 	private Enemy enemy;
+	public bool HasSetPath = false;
 
 	void Start()
 	{
 		enemy = GetComponent<Enemy>();
-
-		target = Waypoints.points[0];
 	}
 
-	void Update()
+    void Update()
 	{
-		Vector3 dir = target.position - transform.position;
-		transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
-
-		if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+		if (HasSetPath)
 		{
-			GetNextWaypoint();
-		}
+			Vector3 dir = target.position - transform.position;
+			transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
 
-		enemy.speed = enemy.startSpeed;
+			if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+			{
+				GetNextWaypoint();
+			}
+
+			enemy.speed = enemy.startSpeed;
+		}
 	}
 
 	void GetNextWaypoint()
 	{
-		if (wavepointIndex >= Waypoints.points.Length - 1)
+		if (wavepointIndex >= _pathToFollow.Points.Length - 1)
 		{
 			EndPath();
 			return;
 		}
 
 		wavepointIndex++;
-		target = Waypoints.points[wavepointIndex];
+		target = _pathToFollow.Points[wavepointIndex];
 	}
 
 	void EndPath()
@@ -46,6 +48,12 @@ public class EnemyMovement : MonoBehaviour {
 		PlayerStats.Lives--;
 		WaveSpawner.EnemiesAlive--;
 		Destroy(gameObject);
+	}
+	public void SetPath(Waypoints waypoints)
+    {
+		_pathToFollow = waypoints;
+		target = _pathToFollow.Points[0];
+		HasSetPath = true;
 	}
 
 }

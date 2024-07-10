@@ -4915,6 +4915,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 900209390}
   timeBetweenWaves: 5
   gameManager: {fileID: 1414305347}
+  _waypoints: {fileID: 1437445423}
 --- !u!1 &985090850
 GameObject:
   m_ObjectHideFlags: 0
