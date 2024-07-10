@@ -11,6 +11,7 @@ public class Turret : MonoBehaviour
     public float fireRate = 2f;
     private float fireCountdown = 0f;
     public float range = 3f;
+    public float damage = 100f;
 
 
     [Header("Unity Setup Fields")]
@@ -18,6 +19,7 @@ public class Turret : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    private GameObject enemy;
 
     void Start()
     {
@@ -42,6 +44,8 @@ public class Turret : MonoBehaviour
         if(nearestEnemey != null && shortesDistance <= range) 
         {
             target = nearestEnemey.transform;
+
+            enemy = nearestEnemey;
         }
         else
         {
@@ -71,7 +75,7 @@ public class Turret : MonoBehaviour
         Bullet bullet = bulletGO.GetComponent<Bullet>();
         if(bullet != null)
         {
-            bullet.Seek(target);
+            bullet.Seek(target, enemy, damage);
         }
     }
 

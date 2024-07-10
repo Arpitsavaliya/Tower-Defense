@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4120492751961285628}
   - component: {fileID: 8334468570579446252}
-  - component: {fileID: 3956220754119924588}
+  - component: {fileID: 1062451674183919367}
   m_Layer: 0
   m_Name: Turret_1
   m_TagString: Untagged
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3956220754119924588
+--- !u!114 &1062451674183919367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 2
   range: 3
+  damage: 100
   enemyTag: Enemy
   bulletPrefab: {fileID: 2385507741270487646, guid: cfc8577ae4877af4195d0de1ca1bc68b, type: 3}
   firePoint: {fileID: 7993608639871676983}

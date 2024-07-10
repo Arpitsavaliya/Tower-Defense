@@ -1,6 +1,7 @@
 
 using System;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class Bullet : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class Bullet : MonoBehaviour
     private GameObject enemy;
     public float speed = 70f;
     public GameObject impactEffect;
-    public void Seek(Transform _target)
+    public float damage = 0f;
+    public void Seek(Transform _target, GameObject en, float _damage)
     {
+        enemy = en;
         target = _target;
+        damage = _damage;
 
     }
     // Start is called before the first frame update
@@ -37,13 +41,23 @@ public class Bullet : MonoBehaviour
         }
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
     }
-
-    private void HitTarget()
+    private void RegisterHit(float dmg)
     {
-        Debug.Log("Hit");
+        //Enemy enemy = GetComponent<Enemy>();
+        //enemy.GetComponent
+        //Debug.Log("Enemy takes "+dmg.ToString()+" damage");
+        //Destroy(target.gameObject);
+        GameObject go = enemy;
+        Enemy other = (Enemy)go.GetComponent(typeof(Enemy));
+        other.TakeDamage(dmg);
+    }
+        private void HitTarget()
+    {
+        //Debug.Log("Hit");
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
-        Destroy(target.gameObject);
+        //Destroy(target.gameObject);
+        RegisterHit(damage);
         Destroy(gameObject);
     }
 }
