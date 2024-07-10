@@ -51,13 +51,13 @@ public class Turret : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(fireCountdown);
-        if (target == null) { return; }
+        //if (target == null) { return; }
 
-        Vector3 dir = target.position - transform.position;//get destination from point A to point B
 
-        if(fireCountdown <= 0f)
+        if(fireCountdown <= 0f && target != null)
         {
+
+            Vector3 dir = target.position - transform.position;//get destination from point A to point B
             Shoot();
             fireCountdown = 1f*fireRate;
         }

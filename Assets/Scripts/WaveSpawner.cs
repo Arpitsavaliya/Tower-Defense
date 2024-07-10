@@ -21,27 +21,27 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Update ()
 	{
-		if (EnemiesAlive > 0)
-		{
-			return;
-		}
+		//if (EnemiesAlive > 0)
+		//{
+		//	return;
+		//}
 
 		if (waveIndex == waves.Length)
 		{
 			gameManager.WinLevel();
 			this.enabled = false;
 		}
-
 		if (countdown <= 0f)
 		{
 			StartCoroutine(SpawnWave());
-			countdown = timeBetweenWaves;
-			return;
+
+            countdown = 100f;//buffer so countdown wont start before last unit of wave is spawned
+            return;
 		}
 
 		countdown -= Time.deltaTime;
 
-		countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
 		//waveCountdownText.text = string.Format("{0:00.00}", countdown);
 	}
@@ -61,7 +61,10 @@ public class WaveSpawner : MonoBehaviour {
 		}
 
 		waveIndex++;
-	}
+
+        countdown = timeBetweenWaves;//start timer after last unit of the wave is spawned 
+    }
+
 
 	void SpawnEnemy (GameObject enemy)
 	{

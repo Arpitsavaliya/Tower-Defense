@@ -5,11 +5,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Transform target;
+    private GameObject enemy;
     public float speed = 70f;
     public GameObject impactEffect;
     public void Seek(Transform _target)
     {
         target = _target;
+
     }
     // Start is called before the first frame update
     void Start()
