@@ -19,6 +19,9 @@ public class WaveSpawner : MonoBehaviour {
 
 	private int waveIndex = 0;
 
+	[SerializeField]
+	private Waypoints _waypoints;
+
 	void Update ()
 	{
 		//if (EnemiesAlive > 0)
@@ -56,6 +59,8 @@ public class WaveSpawner : MonoBehaviour {
 
 		for (int i = 0; i < wave.count; i++)
 		{
+			//TODO: optimize this... (should not getComponent every in a loop!)
+			
 			SpawnEnemy(wave.enemy);
 			yield return new WaitForSeconds(1f / wave.rate);
 		}
@@ -68,7 +73,10 @@ public class WaveSpawner : MonoBehaviour {
 
 	void SpawnEnemy (GameObject enemy)
 	{
-		Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+		GameObject instance = Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+		EnemyMovement mov = instance.GetComponent<EnemyMovement>();
+		mov.SetPath(_waypoints);
+		instance.SetActive(true);
 	}
 
 }
