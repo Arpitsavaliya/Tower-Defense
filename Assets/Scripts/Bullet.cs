@@ -43,14 +43,12 @@ public class Bullet : MonoBehaviour
     }
     private void RegisterHit(float dmg)
     {
-        //Enemy enemy = GetComponent<Enemy>();
-        //enemy.GetComponent
-        //Debug.Log("Enemy takes "+dmg.ToString()+" damage");
-        //Destroy(target.gameObject);
+        //enemy take damage
         GameObject go = enemy;
         Enemy other = (Enemy)go.GetComponent(typeof(Enemy));
         other.TakeDamage(dmg);
     }
+
         private void HitTarget()
     {
         //Debug.Log("Hit");
@@ -58,6 +56,6 @@ public class Bullet : MonoBehaviour
         Destroy(effectIns, 2f);
         //Destroy(target.gameObject);
         RegisterHit(damage);
-        Destroy(gameObject);
+        Destroy(gameObject);//destroy bullet
     }
 }

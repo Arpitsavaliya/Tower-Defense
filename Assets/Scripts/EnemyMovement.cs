@@ -45,7 +45,9 @@ public class EnemyMovement : MonoBehaviour {
 
 	void EndPath()
 	{
-		PlayerStats.Lives--;
+        HealthManager health = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthManager>();
+        health.TakeDamage(5f);
+        PlayerStats.Lives--;
 		WaveSpawner.EnemiesAlive--;
 		Destroy(gameObject);
 	}

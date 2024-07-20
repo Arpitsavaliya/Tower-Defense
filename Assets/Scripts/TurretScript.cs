@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour
+public class TurretScript : MonoBehaviour
 {
     private Transform target;
 
@@ -67,7 +67,6 @@ public class Turret : MonoBehaviour
         }
         fireCountdown -= Time.deltaTime;
     }
-
     private void Shoot()
     {
         Debug.Log("Shoot!");

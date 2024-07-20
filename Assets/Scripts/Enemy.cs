@@ -7,8 +7,9 @@ public class Enemy : MonoBehaviour {
 
 	[HideInInspector]
 	public float speed;
-
-	public float startHealth = 100;
+	
+    PlayerStats playerStats;
+    public float startHealth = 100;
 	private float health;
 
 	public int worth = 50;
@@ -22,7 +23,9 @@ public class Enemy : MonoBehaviour {
 
 	void Start ()
 	{
-		speed = startSpeed;
+
+        playerStats = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerStats>();
+        speed = startSpeed;
 		health = startHealth;
 	}
 
@@ -45,14 +48,21 @@ public class Enemy : MonoBehaviour {
 
 	void Die ()
 	{
+		Debug.Log("DIE!");
 		isDead = true;
 
-		PlayerStats.Money += worth;
 
-		//GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-		//Destroy(effect, 5f);
+        //UPDATE MONEY ON DEATH
 
-		WaveSpawner.EnemiesAlive--;
+        //PlayerStats.Money += worth;
+
+        playerStats.updateMoney(PlayerStats.Money += worth);
+
+
+        //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        //Destroy(effect, 5f);
+
+        WaveSpawner.EnemiesAlive--;
 
 		Destroy(gameObject);
 	}

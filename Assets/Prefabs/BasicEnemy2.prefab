@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 2
   speed: 0
-  startHealth: 120
+  startHealth: 80
   worth: 80
 --- !u!114 &1615397782810296607
 MonoBehaviour:
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccef851323492b4b946043035cf78e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HasSetPath: 0
 --- !u!95 &5417971646870872194
 Animator:
   serializedVersion: 5

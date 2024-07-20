@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312d6915b0e08b24682dfe248454d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 1
+  startSpeed: 11
   speed: 0
-  startHealth: 100
+  startHealth: 1001
   worth: 50
 --- !u!114 &1615397782810296607
 MonoBehaviour:
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccef851323492b4b946043035cf78e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HasSetPath: 0
 --- !u!95 &2595419097148253551
 Animator:
   serializedVersion: 5

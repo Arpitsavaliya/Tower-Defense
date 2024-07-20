@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2244178764818395314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.308, y: -0.174, z: 0}
+  m_LocalPosition: {x: 0, y: 0.459, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4120492751961285628}
   - component: {fileID: 8334468570579446252}
-  - component: {fileID: -541002100421370087}
+  - component: {fileID: 1062451674183919367}
   m_Layer: 0
-  m_Name: Turret_1
+  m_Name: Turret_3
   m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -795907767, guid: 394773df8a4e7974ca31131e226add96, type: 3}
+  m_Sprite: {fileID: -942654952, guid: 5cbe74e6303b14740bd33022e5e43a27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-541002100421370087
+--- !u!114 &1062451674183919367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,10 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97223ca6e27a6f47bfc24857d851285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 2
-  range: 3
-  damage: 100
-  TurretCost: 100
+  fireRate: 4
+  range: 5
+  damage: 250
+  TurretCost: 300
   enemyTag: Enemy
   bulletPrefab: {fileID: 2385507741270487646, guid: cfc8577ae4877af4195d0de1ca1bc68b, type: 3}
   firePoint: {fileID: 7993608639871676983}
@@ -164,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 5096080192287462593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.422, y: -0.213, z: 0}
+  m_LocalPosition: {x: 0, y: 0.466, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

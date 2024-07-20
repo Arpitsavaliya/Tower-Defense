@@ -3,9 +3,9 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour {
 
 	public static BuildManager instance;
-    public readonly int MaxTurrents = 7;
+	public readonly int MaxTurrents = 7;
 
-    void Awake ()
+	void Awake ()
 	{
 		if (instance != null)
 		{

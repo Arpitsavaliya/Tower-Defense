@@ -5,7 +5,7 @@ public class Node : MonoBehaviour {
 
 	public Color hoverColor;
 	public Color notEnoughMoneyColor;
-    public Vector3 positionOffset;
+	public Vector3 positionOffset;
 
 	[HideInInspector]
 	public GameObject turret;
@@ -25,7 +25,7 @@ public class Node : MonoBehaviour {
 		startColor = rend.material.color;
 
 		buildManager = BuildManager.instance;
-    }
+	}
 
 	public Vector3 GetBuildPosition ()
 	{
@@ -58,9 +58,9 @@ public class Node : MonoBehaviour {
 		}
 		/*if(PlayerStats.Turrents >= buildManager.MaxTurrents)
 		{
-            Debug.Log("You Cannot Build more then " + buildManager.MaxTurrents +" Turrents");
-            return;
-        }*/
+			Debug.Log("You Cannot Build more then " + buildManager.MaxTurrents +" Turrents");
+			return;
+		}*/
 
 		PlayerStats.Money -= blueprint.cost;
 
@@ -69,7 +69,7 @@ public class Node : MonoBehaviour {
 
 		turretBlueprint = blueprint;
 
-        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+		GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
 		Destroy(effect, 5f);
 
 		Debug.Log("Turret build!");
@@ -113,8 +113,8 @@ public class Node : MonoBehaviour {
 
 	void OnMouseEnter ()
 	{
-		if (EventSystem.current.IsPointerOverGameObject())
-			return;
+		//if (EventSystem.current.IsPointerOverGameObject())
+		//	return;
 
 		if (!buildManager.CanBuild)
 			return;
@@ -132,6 +132,6 @@ public class Node : MonoBehaviour {
 	void OnMouseExit ()
 	{
 		rend.material.color = startColor;
-    }
+	}
 
 }
