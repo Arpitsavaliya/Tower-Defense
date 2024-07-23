@@ -10,17 +10,12 @@ public class Bullet : MonoBehaviour
     public float speed = 70f;
     public GameObject impactEffect;
     public float damage = 0f;
+    private Vector2 direction;
     public void Seek(Transform _target, GameObject en, float _damage)
     {
         enemy = en;
         target = _target;
         damage = _damage;
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame

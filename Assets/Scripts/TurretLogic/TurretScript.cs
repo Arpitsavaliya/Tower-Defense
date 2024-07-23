@@ -20,11 +20,17 @@ public class TurretScript : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     private GameObject enemy;
+    private TurretAnimation animController;
 
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
+    private void Awake()
+    {
+        animController = GetComponent<TurretAnimation>();
+    }
+
     void UpdateTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
@@ -55,9 +61,6 @@ public class TurretScript : MonoBehaviour
     }
     void Update()
     {
-        //if (target == null) { return; }
-
-
         if(fireCountdown <= 0f && target != null)
         {
 
@@ -69,11 +72,16 @@ public class TurretScript : MonoBehaviour
     }
     private void Shoot()
     {
-        Debug.Log("Shoot!");
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bullet = bulletGO.GetComponent<Bullet>();
-        if(bullet != null)
+        if (bulletGO.TryGetComponent<Bullet>(out var bullet))
         {
+            // -- InitialDirection: -- //
+            Vector2 direction = target.position - firePoint.position;
+            // -- After getting the initial direction pointing towards the target, run directional animation: 
+            if (animController != null)
+            {
+                animController.PlayShootingAnimation(direction);
+            }
             bullet.Seek(target, enemy, damage);
         }
     }
