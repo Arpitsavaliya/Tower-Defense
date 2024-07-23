@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e4615491c45dd4597300a555368222, type: 3}
   m_Name: FastMedusa
   m_EditorClassIdentifier: 
-  startingSpeed: 8
+  startingSpeed: 5
   startingHealth: 50
-  worth: 1
+  worth: 50

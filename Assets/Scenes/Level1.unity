@@ -5086,11 +5086,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 511222664172360202, guid: edd25df61c87faa4a87b5d32b50a466a, type: 3}
-    count: 1
-    rate: 1
+    count: 5
+    rate: 2
   - enemy: {fileID: 6426221051758277416, guid: 1f429cdf061cff748bafb6733b31a055, type: 3}
-    count: 1
-    rate: 1
+    count: 5
+    rate: 2
   spawnPoint: {fileID: 900209390}
   timeBetweenWaves: 5
   gameManager: {fileID: 1414305347}
@@ -5803,7 +5803,7 @@ Transform:
   m_GameObject: {fileID: 1437445421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0035114, y: -2.4828668, z: 0}
+  m_LocalPosition: {x: -3.0035114, y: -2.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
