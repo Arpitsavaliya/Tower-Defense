@@ -3,30 +3,35 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
-	public float startSpeed = 10f;
 
 	[HideInInspector]
 	public float speed;
 	
     PlayerStats playerStats;
-    public float startHealth = 100;
 	private float health;
-
-	public int worth = 50;
-
 	//public GameObject deathEffect;
 
 	[Header("Unity Stuff")]
 	//public Image healthBar;
+	[Header("Enemy Properties")]
+    [Tooltip("A reference to an enemy type (ScriptableObjects/Enemies).")]
+	public EnemyType type;
 
 	private bool isDead = false;
+
+	// -- StartingSpeed property. References type.startingSpeed. //
+	public float StartingSpeed
+    {
+		get { return type.startingSpeed;  }
+		private set {}
+    }
 
 	void Start ()
 	{
 
         playerStats = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerStats>();
-        speed = startSpeed;
-		health = startHealth;
+        speed = type.startingSpeed;
+		health = type.startingHealth;
 	}
 
 	public void TakeDamage (float amount)
@@ -43,22 +48,14 @@ public class Enemy : MonoBehaviour {
 
 	public void Slow (float pct)
 	{
-		speed = startSpeed * (1f - pct);
+		speed = type.startingSpeed * (1f - pct);
 	}
 
 	void Die ()
 	{
-		Debug.Log("DIE!");
 		isDead = true;
-
-
         //UPDATE MONEY ON DEATH
-
-        //PlayerStats.Money += worth;
-
-        playerStats.updateMoney(PlayerStats.Money += worth);
-
-
+        playerStats.updateMoney(PlayerStats.Money += type.worth);
         //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         //Destroy(effect, 5f);
 

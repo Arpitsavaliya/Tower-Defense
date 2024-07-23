@@ -7,27 +7,36 @@ public class EnemyMovement : MonoBehaviour {
 	private Transform target;
 	private int wavepointIndex = 0;
 	private Waypoints _pathToFollow;
+
 	private Enemy enemy;
-	public bool HasSetPath = false;
+	private EnemyAnimation animController;
+
+
+	private bool hasSetPath = false;
 
 	void Start()
 	{
 		enemy = GetComponent<Enemy>();
+		animController = GetComponent<EnemyAnimation>();
 	}
 
     void Update()
 	{
-		if (HasSetPath)
+		if (hasSetPath)
 		{
-			Vector3 dir = target.position - transform.position;
-			transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
+			Vector2 dir = target.position - transform.position;
+			transform.Translate(enemy.speed * Time.deltaTime * dir.normalized, Space.World);
 
-			if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+			if (Vector2.Distance(transform.position, target.position) <= 0.4f)
 			{
 				GetNextWaypoint();
 			}
-
-			enemy.speed = enemy.startSpeed;
+			enemy.speed = enemy.StartingSpeed;
+			// Run appropiate animations if it exists on enemy: 
+			if (animController != null)
+			{
+				animController.SetRunningAnimations(dir);
+			}
 		}
 	}
 
@@ -55,7 +64,7 @@ public class EnemyMovement : MonoBehaviour {
     {
 		_pathToFollow = waypoints;
 		target = _pathToFollow.Points[0];
-		HasSetPath = true;
+		hasSetPath = true;
 	}
 
 }
