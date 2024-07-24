@@ -106,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -942654952, guid: 5cbe74e6303b14740bd33022e5e43a27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -133,7 +133,6 @@ MonoBehaviour:
   fireRate: 4
   range: 5
   damage: 250
-  TurretCost: 300
   enemyTag: Enemy
   bulletPrefab: {fileID: 2385507741270487646, guid: cfc8577ae4877af4195d0de1ca1bc68b, type: 3}
   firePoint: {fileID: 7993608639871676983}

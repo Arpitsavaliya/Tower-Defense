@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e4615491c45dd4597300a555368222, type: 3}
   m_Name: ArmoredFish
   m_EditorClassIdentifier: 
-  startingSpeed: 3
+  startingSpeed: 1
   startingHealth: 400
   worth: 300
