@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4574483852448825603}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.68, y: -1.09, z: 0.041605275}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
@@ -143,5 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0b246768b9f9348a92b19b475341e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSprite: {fileID: 21300000, guid: dd87e734323a481428a88c71a1410591, type: 3}
-  posOffset: {x: 0, y: 0.5, z: 0}
+  posOffset: {x: 0, y: 0.25, z: 0}
