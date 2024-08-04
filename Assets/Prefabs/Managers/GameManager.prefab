@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e259c7f44eddd9a4aa4c39ea115233ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  completeLevelUI: {fileID: 0}
+  sFaderRef: {fileID: 0}
+  NextLevelName: Level2
 --- !u!114 &4087055358890500001
 MonoBehaviour:
   m_ObjectHideFlags: 0

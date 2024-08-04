@@ -5,6 +5,8 @@ public class MainMenu : MonoBehaviour {
 
 	public string levelToLoad = "MainLevel";
 
+	public string levelSelector = "LevelSelect";
+
 	public SceneFader sceneFader;
 
 	public void Play ()
@@ -12,9 +14,13 @@ public class MainMenu : MonoBehaviour {
 		sceneFader.FadeTo(levelToLoad);
 	}
 
+	public void ToLevelSelector()
+    {
+		sceneFader.FadeTo(levelSelector);
+	}
+
 	public void Quit ()
 	{
-		Debug.Log("Exciting...");
 		Application.Quit();
 	}
 
