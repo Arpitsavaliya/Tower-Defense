@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public float speed = 70f;
     public GameObject impactEffect;
     public float damage = 0f;
+    [SerializeField]
+    private float effectsDuration = 1.0f;
 
     private Transform target;
     private GameObject enemy;
@@ -54,7 +56,7 @@ public class Bullet : MonoBehaviour
     private void HitTarget()
     {
         GameObject effectIns = Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 2f);
+        Destroy(effectIns, effectsDuration);
         RegisterHit(damage);
         Destroy(gameObject);//destroy bullet
     }
