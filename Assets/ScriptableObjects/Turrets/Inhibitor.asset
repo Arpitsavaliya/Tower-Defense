@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Inhibitor
   m_EditorClassIdentifier: 
   fireRate: 2
-  range: 6
-  damage: 75
+  range: 5
+  damage: 100
   extraGold: 0
-  slowPct: 0.7
+  slowPct: 0.4
