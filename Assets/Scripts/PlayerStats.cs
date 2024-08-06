@@ -21,12 +21,9 @@ public class PlayerStats : MonoBehaviour {
 		GoldText.text = Money.ToString();
         Rounds = 0;
 	}
-	public void updateMoney(int currMoney)
+	public void UpdateMoney(int currMoney)
 	{
-		Debug.Log("asdasdasd");
 		Money = currMoney;
 		GoldText.text = Money.ToString();
-
-
     }
 }

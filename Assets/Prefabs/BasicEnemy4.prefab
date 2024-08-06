@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312d6915b0e08b24682dfe248454d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 3
   speed: 0
-  startHealth: 120
-  worth: 80
+  type: {fileID: 0}
+  slowedColor: {r: 0, g: 1, b: 1, a: 1}
+  shield: {fileID: 0}
 --- !u!114 &1615397782810296607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccef851323492b4b946043035cf78e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasSetPath: 0
 --- !u!95 &3148724087243963621
 Animator:
   serializedVersion: 5

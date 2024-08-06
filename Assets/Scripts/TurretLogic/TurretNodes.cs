@@ -10,32 +10,26 @@ public class TurretNodes : MonoBehaviour
     public Vector3 posOffset;
 
     private GameObject Turret;
-    private SpriteRenderer rend;
-
-    private Sprite startSprite;
     PlayerStats playerStats;
+
+    /*[SerializeField]
+    private GameObject TurretPlayer;*/
 
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerStats>();
-        rend = GetComponent<SpriteRenderer>();//cache this at the start so you dont need to find everytime
         //startSprite = rend.sprite;
     }
     private void OnMouseEnter()
     {
-
         if (!BuildManager2.instance.isBuildingAllowed) return;
         if (Turret != null)
             return;
-        Debug.Log("ON HOVER!");
     }
 
     private void OnMouseExit()
     {
-        
         if (!BuildManager2.instance.isBuildingAllowed) return;   
-        Debug.Log("ON EXIT!");
-        //rend.sprite = startSprite;
     }
     public GameObject getTurret()
     {
@@ -55,7 +49,7 @@ public class TurretNodes : MonoBehaviour
             return;
         }
         //Deduct Money from PlayerStats
-        playerStats.updateMoney(PlayerStats.Money - BuildManager2.instance.GetTurretCost());
+        playerStats.UpdateMoney(PlayerStats.Money - BuildManager2.instance.GetTurretCost());
 
 
         GameObject TurretToBuild = BuildManager2.instance.GetTurretToBuild();

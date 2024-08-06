@@ -1,29 +1,31 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildManager2 : MonoBehaviour
 {
     public static BuildManager2 instance;
     private GameObject turretToBuild;
-    public GameObject StandardTurretPrefab;
-    public GameObject turret2;
-    public GameObject turret3;
-    public int turretCost1;
-    public int turretCost2;
-    public int turretCost3;
+
+    [Header ("Turret Data (Arrays share order)")]
+    [SerializeField]
+    private List<GameObject> turrets;
+    [SerializeField]
+    private List<int> turretCosts;
+
     private int turretCost;
-    public Boolean isBuildingAllowed;//added this so building turrets will start on click from shop
+    public bool isBuildingAllowed;//added this so building turrets will start on click from shop
 
     private void Start()
     {
-        turretToBuild = StandardTurretPrefab;
+        turretToBuild = turrets[0];
     }
 
     private void Awake()
     {
         if (instance != null)
         {
-            Debug.Log("Theres more than one instance then");
+            Debug.Log("Theres more than one instance!");
             return;
         }
         instance = this;
@@ -40,22 +42,10 @@ public class BuildManager2 : MonoBehaviour
 
     public void setTurret(int turretNum)
     {
-        Debug.Log("setTurret" + turretNum);
-        
-        if (turretNum == 1)
+        if (turretNum < Mathf.Min(turrets.Count, turretCosts.Count))
         {
-            turretToBuild = StandardTurretPrefab;
-            turretCost = turretCost1;
-        }
-        else if (turretNum == 2)
-        {
-            turretToBuild = turret2;
-            turretCost = turretCost2;
-        }
-        else if (turretNum == 3)
-        {
-            turretToBuild = turret3;
-            turretCost = turretCost3;
+            turretToBuild = turrets[turretNum];
+            turretCost = turretCosts[turretNum];
         }
         isBuildingAllowed = true;
         lightUpAvailableNode();

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: FastMedusa
   m_EditorClassIdentifier: 
   startingSpeed: 5
-  startingHealth: 50
+  startingHealth: 300
   worth: 50

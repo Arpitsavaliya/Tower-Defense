@@ -31,7 +31,7 @@ public class EnemyMovement : MonoBehaviour {
 			{
 				GetNextWaypoint();
 			}
-			enemy.speed = enemy.StartingSpeed;
+			//enemy.speed = enemy.StartingSpeed;
 			// Run appropiate animations if it exists on enemy: 
 			if (animController != null)
 			{

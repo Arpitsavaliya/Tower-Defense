@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SlowMedusa
   m_EditorClassIdentifier: 
   startingSpeed: 2
-  startingHealth: 50
+  startingHealth: 120
   worth: 25

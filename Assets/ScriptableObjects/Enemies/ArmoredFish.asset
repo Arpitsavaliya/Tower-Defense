@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ArmoredFish
   m_EditorClassIdentifier: 
   startingSpeed: 1
-  startingHealth: 400
-  worth: 300
+  startingHealth: 3200
+  worth: 150
