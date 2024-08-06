@@ -5,17 +5,24 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class Bullet : MonoBehaviour
 {
-    private Transform target;
-    private GameObject enemy;
     public float speed = 70f;
     public GameObject impactEffect;
     public float damage = 0f;
-    private Vector2 direction;
-    public void Seek(Transform _target, GameObject en, float _damage)
+
+    private Transform target;
+    private GameObject enemy;
+    private int exGoldKill = 0;
+    private float slowPct = 0;
+    /**
+     *  -- sets needed variables for correct functioning.
+     */
+    public void Seek(Transform _target, GameObject en, float _damage, int extraGoldPerKill, float _slowPct)
     {
         enemy = en;
         target = _target;
         damage = _damage;
+        exGoldKill = extraGoldPerKill;
+        slowPct = _slowPct;
     }
 
     // Update is called once per frame
@@ -41,15 +48,13 @@ public class Bullet : MonoBehaviour
         //enemy take damage
         GameObject go = enemy;
         Enemy other = (Enemy)go.GetComponent(typeof(Enemy));
-        other.TakeDamage(dmg);
+        other.TakeDamage(dmg, exGoldKill, slowPct);
     }
 
-        private void HitTarget()
+    private void HitTarget()
     {
-        //Debug.Log("Hit");
-        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+        GameObject effectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
-        //Destroy(target.gameObject);
         RegisterHit(damage);
         Destroy(gameObject);//destroy bullet
     }

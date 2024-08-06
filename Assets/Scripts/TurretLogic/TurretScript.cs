@@ -5,26 +5,26 @@ using UnityEngine;
 
 public class TurretScript : MonoBehaviour
 {
-    private Transform target;
-
+    
     [Header("Attributes")]
-    public float fireRate = 2f;
-    private float fireCountdown = 0f;
-    public float range = 3f;
-    public float damage = 100f;
-
+    [SerializeField]
+    [InspectorName("Turret Type")]
+    private ScriptableTurret _t;
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
-
     public GameObject bulletPrefab;
     public Transform firePoint;
+
+    // -- Private variables -- //
     private GameObject enemy;
     private TurretAnimation animController;
+    private Transform target;
+    private float fireCountdown = 0f;
 
     void Start()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        InvokeRepeating(nameof(UpdateTarget), 0f, 0.5f);
     }
     private void Awake()
     {
@@ -47,7 +47,7 @@ public class TurretScript : MonoBehaviour
             }
         }
 
-        if(nearestEnemey != null && shortesDistance <= range) 
+        if(nearestEnemey != null && shortesDistance <= _t.range) 
         {
             target = nearestEnemey.transform;
 
@@ -63,10 +63,8 @@ public class TurretScript : MonoBehaviour
     {
         if(fireCountdown <= 0f && target != null)
         {
-
-            Vector3 dir = target.position - transform.position;//get destination from point A to point B
             Shoot();
-            fireCountdown = 1f*fireRate;
+            fireCountdown = 1f*_t.fireRate;
         }
         fireCountdown -= Time.deltaTime;
     }
@@ -82,13 +80,14 @@ public class TurretScript : MonoBehaviour
             {
                 animController.PlayShootingAnimation(direction);
             }
-            bullet.Seek(target, enemy, damage);
+            
+            bullet.Seek(target, enemy, _t.damage, _t.extraGold, _t.slowPct);
         }
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, _t.range);
     }
 }
