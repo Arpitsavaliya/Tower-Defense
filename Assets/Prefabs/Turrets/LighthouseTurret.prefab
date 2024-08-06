@@ -98,10 +98,18 @@ PrefabInstance:
       propertyPath: _t
       value: 
       objectReference: {fileID: 11400000, guid: c1655a0775669084db15bd84e0619673, type: 2}
+    - target: {fileID: 2839937519089089801, guid: 6687a760d51c1094e9cc56b17c5625ec, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8400414832305497320, guid: 11ca3303791c08344965096b9486ccc7, type: 3}
     - target: {fileID: 5204299954398040427, guid: 6687a760d51c1094e9cc56b17c5625ec, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6460783661065926150, guid: 6687a760d51c1094e9cc56b17c5625ec, type: 3}
+      propertyPath: shootingSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: fee99b9d943547f4394af2dd53716e13, type: 3}
     - target: {fileID: 7189685581018306994, guid: 6687a760d51c1094e9cc56b17c5625ec, type: 3}
       propertyPath: m_Name
       value: LighthouseTurret

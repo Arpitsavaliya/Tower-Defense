@@ -16,4 +16,4 @@ MonoBehaviour:
   range: 5
   damage: 100
   extraGold: 0
-  slowPct: 0.4
+  slowPct: 0.5

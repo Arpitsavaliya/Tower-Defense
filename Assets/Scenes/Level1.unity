@@ -7593,7 +7593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621281963595687409, guid: 153fc1190c42e384caf5348ed204ba9d, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7772,7 +7772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4168524280638225509, guid: 1a0f25bffce0ed84fa5e1773041e3620, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4168524280638225509, guid: 1a0f25bffce0ed84fa5e1773041e3620, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -10,7 +10,9 @@ public class PlayerStats : MonoBehaviour {
     public TextMeshProUGUI GoldText;
 
     public static int Lives;
+	public static int maxLives;
 	public int startLives = 20;
+
 
 	public static int Rounds;
 
@@ -18,6 +20,7 @@ public class PlayerStats : MonoBehaviour {
 	{
 		Money = startMoney;
 		Lives = startLives;
+		maxLives = startLives;
 		GoldText.text = Money.ToString();
         Rounds = 0;
 	}

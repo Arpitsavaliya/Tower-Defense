@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +13,28 @@ public class GameManager : MonoBehaviour
 	public SceneFader sFaderRef;
 	public string NextLevelName;
 
-	void Start()
+	[SerializeField]
+	private int enemiesOnField = 0;
+
+	public int EnemiesOnField { get { return enemiesOnField; } 
+		set { enemiesOnField = value; } }
+
+	
+	public static GameManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+			Destroy(this);
+			Debug.LogWarning("There is another Game Manager. Deleting This one");
+        }
+		else
+        {
+			Instance = this;
+        }
+    }
+    void Start()
 	{
 		GameIsOver = false;
 	}
@@ -31,6 +53,7 @@ public class GameManager : MonoBehaviour
 
 	void EndGame()
 	{
+		
 		Time.timeScale = 0f;
 		GameIsOver = true;
 		gameOverUI.SetActive(true);
@@ -38,6 +61,10 @@ public class GameManager : MonoBehaviour
 
 	public void WinLevel()
 	{
+		StartCoroutine(LocalTimer(1.0f, StopWinGame));
+	}
+	private void StopWinGame()
+    {
 		Time.timeScale = 0f;
 		GameIsOver = true;
 		completeLevelUI.SetActive(true);
@@ -47,4 +74,9 @@ public class GameManager : MonoBehaviour
 		Time.timeScale = 1f;
 		sFaderRef.FadeTo(NextLevelName);
 	}
+	private IEnumerator LocalTimer(float Timer, Action toDo)
+    {
+		yield return new WaitForSeconds(Timer);
+		toDo?.Invoke();
+    }
 }

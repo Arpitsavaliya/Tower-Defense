@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour {
 
-	public static int EnemiesAlive = 0;
-
 	public Wave[] waves;
 
 	public Transform spawnPoint;
@@ -24,14 +22,10 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Update ()
 	{
-		//if (EnemiesAlive > 0)
-		//{
-		//	return;
-		//}
 
 		if (waveIndex == waves.Length)
 		{
-			if (EnemiesAlive <= 0)
+			if (GameManager.Instance.EnemiesOnField <= 0)
 			{
 				gameManager.WinLevel();
 				this.enabled = false;
@@ -58,12 +52,11 @@ public class WaveSpawner : MonoBehaviour {
 
 		Wave wave = waves[waveIndex];
 
-		EnemiesAlive += wave.count;
+		GameManager.Instance.EnemiesOnField += wave.count;
 
 		for (int i = 0; i < wave.count; i++)
 		{
 			//TODO: optimize this... (should not getComponent every in a loop!)
-			
 			SpawnEnemy(wave.enemy);
 			yield return new WaitForSeconds(1f / wave.rate);
 		}

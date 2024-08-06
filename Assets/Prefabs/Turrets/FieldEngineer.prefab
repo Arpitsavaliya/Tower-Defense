@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 7771279914553927174}
   - component: {fileID: 2839937519089089801}
   - component: {fileID: 4834258362589822919}
+  - component: {fileID: 6460783661065926150}
   m_Layer: 0
   m_Name: FieldEngineer
   m_TagString: Untagged
@@ -270,3 +271,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePointManager: {fileID: 8581112220003371438}
+--- !u!114 &6460783661065926150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189685581018306994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7eb35cfc2914d240952f8b68f15d224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSFX: {fileID: 8300000, guid: a72a0a65cb229c347b5ae9e848893e46, type: 3}

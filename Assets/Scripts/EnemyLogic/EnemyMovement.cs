@@ -55,9 +55,10 @@ public class EnemyMovement : MonoBehaviour {
 	void EndPath()
 	{
         HealthManager health = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthManager>();
-        health.TakeDamage((enemy.Damage / PlayerStats.Lives) * 100);
+        health.TakeDamage(((float)enemy.Damage / PlayerStats.maxLives) * 100);
+		Debug.Log(((float)enemy.Damage / PlayerStats.Lives) * 100);
         PlayerStats.Lives-= enemy.Damage;
-		WaveSpawner.EnemiesAlive--;
+		GameManager.Instance.EnemiesOnField--;
 		Destroy(gameObject);
 	}
 	public void SetPath(Waypoints waypoints)

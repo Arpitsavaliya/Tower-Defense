@@ -15,3 +15,4 @@ MonoBehaviour:
   startingSpeed: 0
   startingHealth: 900
   worth: 0
+  damage: 0
