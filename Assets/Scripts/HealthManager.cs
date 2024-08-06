@@ -9,6 +9,7 @@ public class HealthManager : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100f;
 
+
     // Update is called once per frame
     void Update()
     {

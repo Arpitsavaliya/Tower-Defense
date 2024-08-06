@@ -35,6 +35,12 @@ public class Enemy : MonoBehaviour {
 		private set {}
     }
 
+	public int Damage
+    {
+		get { return type.damage; }
+		private set { }
+    }
+
 	void Start ()
 	{
 
