@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: Opening Scene
+  m_Name: MissionStart
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
   - {fileID: 872512110556243621}
   - {fileID: 6643263317201072743}
-  m_FixedDuration: 1.6666666666666667
+  m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1

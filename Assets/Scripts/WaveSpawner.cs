@@ -11,6 +11,9 @@ public class WaveSpawner : MonoBehaviour {
 	public float timeBetweenWaves = 5f;
 	private float countdown = 2f;
 
+	[SerializeField]
+	private float startingCountdown = 2f;
+
 	//public Text waveCountdownText;
 
 	public GameManager gameManager;
@@ -20,21 +23,27 @@ public class WaveSpawner : MonoBehaviour {
 	[SerializeField]
 	private Waypoints _waypoints;
 
-	void Update ()
+    private void Awake()
+    {
+		countdown = startingCountdown;
+    }
+
+    private void Start()
+    {
+		GameManager.Instance.AddToWaves(waves.Length);
+    }
+
+    void Update ()
 	{
 
 		if (waveIndex == waves.Length)
 		{
-			if (GameManager.Instance.EnemiesOnField <= 0)
-			{
-				gameManager.WinLevel();
-				this.enabled = false;
-			}
+			this.enabled = false;
+			
 		}
 		else if (countdown <= 0f)
 		{
 			StartCoroutine(SpawnWave());
-
             countdown = 100f;//buffer so countdown wont start before last unit of wave is spawned
             return;
 		}
@@ -53,6 +62,7 @@ public class WaveSpawner : MonoBehaviour {
 		Wave wave = waves[waveIndex];
 
 		GameManager.Instance.EnemiesOnField += wave.count;
+		GameManager.Instance.CurrentWaves++;
 
 		for (int i = 0; i < wave.count; i++)
 		{

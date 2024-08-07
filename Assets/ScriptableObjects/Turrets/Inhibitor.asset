@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92982cfd602397d4a8ea7f065a5fcc1d, type: 3}
   m_Name: Inhibitor
   m_EditorClassIdentifier: 
-  fireRate: 2
+  fireRate: 3.5
   range: 5
-  damage: 100
+  damage: 150
   extraGold: 0
-  slowPct: 0.5
+  slowPct: 0.6

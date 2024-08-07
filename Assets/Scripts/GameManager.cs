@@ -15,11 +15,29 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField]
 	private int enemiesOnField = 0;
+	[SerializeField]
+	private int totalWaves = 0;
 
 	public int EnemiesOnField { get { return enemiesOnField; } 
-		set { enemiesOnField = value; } }
+		set {
+			enemiesOnField = value;
+			//Dirty fix for this triggering twice. 
+			if (enemiesOnField < 0) enemiesOnField = 0;
+			
+		} }
 
-	
+	public int TotalWaves
+	{
+		get { return totalWaves; }
+		set { totalWaves = value; }
+	}
+
+	public int CurrentWaves
+    {
+		get; set;
+    }
+
+
 	public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -44,7 +62,14 @@ public class GameManager : MonoBehaviour
 	{
 		if (GameIsOver)
 			return;
-
+		if (CurrentWaves >= TotalWaves)
+		{
+			if (EnemiesOnField <= 0)
+			{
+				WinLevel();
+				
+			}
+		}
 		if (PlayerStats.Lives <= 0)
 		{
 			EndGame();
@@ -65,7 +90,7 @@ public class GameManager : MonoBehaviour
 	}
 	private void StopWinGame()
     {
-		Time.timeScale = 0f;
+		//Time.timeScale = 0f;
 		GameIsOver = true;
 		completeLevelUI.SetActive(true);
 	}
@@ -78,5 +103,10 @@ public class GameManager : MonoBehaviour
     {
 		yield return new WaitForSeconds(Timer);
 		toDo?.Invoke();
+    }
+
+	public void AddToWaves(int waves)
+    {
+		totalWaves += waves;
     }
 }

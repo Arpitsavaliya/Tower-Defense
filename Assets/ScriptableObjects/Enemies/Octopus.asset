@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Octopus
   m_EditorClassIdentifier: 
   startingSpeed: 2
-  startingHealth: 100
-  worth: 200
+  startingHealth: 120
+  worth: 150
+  damage: 1

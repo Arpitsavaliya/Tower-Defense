@@ -85,7 +85,7 @@ public class Enemy : MonoBehaviour {
 	{
 		isDead = true;
 		playerStats.UpdateMoney(PlayerStats.Money += (type.worth));
-		GameManager.Instance.EnemiesOnField--;
+		GameManager.Instance.EnemiesOnField-= 1;
 		Destroy(gameObject);
 	}
 

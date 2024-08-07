@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 4
   range: 8
-  damage: 450
+  damage: 600
   extraGold: 0
   slowPct: 0
