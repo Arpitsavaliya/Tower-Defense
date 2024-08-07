@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OctopusBarrier
   m_EditorClassIdentifier: 
   startingSpeed: 0
-  startingHealth: 800
+  startingHealth: 700
   worth: 0
   damage: 0

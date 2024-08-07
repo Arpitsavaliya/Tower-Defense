@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e4615491c45dd4597300a555368222, type: 3}
   m_Name: Octopus
   m_EditorClassIdentifier: 
-  startingSpeed: 2
-  startingHealth: 120
+  startingSpeed: 2.2
+  startingHealth: 180
   worth: 150
   damage: 1

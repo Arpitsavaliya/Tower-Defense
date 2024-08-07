@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92982cfd602397d4a8ea7f065a5fcc1d, type: 3}
   m_Name: LighthouseTurret
   m_EditorClassIdentifier: 
-  fireRate: 4
-  range: 8
-  damage: 600
+  fireRate: 5
+  range: 12
+  damage: 800
   extraGold: 0
   slowPct: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FieldEngineer
   m_EditorClassIdentifier: 
   fireRate: 1
-  range: 2.5
+  range: 2
   damage: 40
   extraGold: 5
   slowPct: 0

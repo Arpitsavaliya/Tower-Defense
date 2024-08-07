@@ -48,8 +48,8 @@ public class BackgroundMusicManager : MonoBehaviour
         }
     }
 
-    public void PlayOneShot(AudioClip clip)
+    public void PlayOneShot(AudioClip clip, float volume)
     {
-        audioSource.PlayOneShot(clip);
+        audioSource.PlayOneShot(clip, volume);
     }
 }

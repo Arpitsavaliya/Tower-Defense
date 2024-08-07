@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FinalBoss
   m_EditorClassIdentifier: 
   startingSpeed: 0.5
-  startingHealth: 12500
+  startingHealth: 17000
   worth: 10000
   damage: 1000

@@ -284,3 +284,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingSFX: {fileID: 8300000, guid: a72a0a65cb229c347b5ae9e848893e46, type: 3}
+  volume: 0.7
